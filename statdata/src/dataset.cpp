@@ -34,6 +34,7 @@ Value *Dataset::create_value(int nVarId, int nIndId) {
 	}
 	PValue oVal = std::make_shared < Value > (pVar, pInd);
 	pSet->values().push_back(oVal);
+	return p;
 } // createValue
 Value *Dataset::create_value(const String &sigleVar, const String &sigleInd) {
 	Value *p = const_cast<Value *>(this->find_value_by_variable_indiv(sigleVar,
@@ -56,6 +57,7 @@ Value *Dataset::create_value(const String &sigleVar, const String &sigleInd) {
 	}
 	PValue oVal = std::make_shared < Value > (pVar, pInd);
 	pSet->values().push_back(oVal);
+	return p;
 } // create_value
 Indiv *Dataset::create_indiv(int nIndId) {
 	Indiv *p = const_cast<Indiv *>(this->find_indiv_by_id(nIndId));

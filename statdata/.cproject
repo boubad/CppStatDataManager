@@ -6,37 +6,38 @@
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" id="intel.linux.x86_64.a.rel.1050504271_14.0.0" name="Release" parent="intel.linux.x86_64.a.rel_14.0.0">
 					<folderInfo id="intel.linux.x86_64.a.rel.1050504271._14.0.0" name="/" resourcePath="">
-						<toolChain id="intel.toolchain.linux.x86_64.a.rel.1115026913_14.0.0" name="Intel Toolchain for Static Library on Intel(R) 64" superClass="intel.toolchain.linux.x86_64.a.rel_14.0.0">
-							<targetPlatform archList="x86_64" binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.linux.x86_64.a.rel_14.0.0.778482166" name="Platform.A.Release" osList="linux" superClass="intel.platform.linux.x86_64.a.rel_14.0.0"/>
-							<builder buildPath="${workspace_loc:/statdata/Release}" id="intel.builder.linux.x86_64.a.rel.1541762884_14.0.0" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Intel Builder" superClass="intel.builder.linux.x86_64.a.rel_14.0.0">
-								<outputEntries>
-									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Release"/>
-									<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="outputPath" name="Debug"/>
-								</outputEntries>
-							</builder>
-							<tool command="icpc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="intel.cpp.compilestep.linux.x86_64.a.rel.1494453062_14.0.0" name="Intel Intel(R) 64 C++ Compiler " superClass="intel.cpp.compilestep.linux.x86_64.a.rel_14.0.0">
-								<option id="intel.compilestep.language.ansi_conformance.1527695713" name="ANSI Conformance" superClass="intel.compilestep.language.ansi_conformance" value="ansi_conformance.8" valueType="enumerated"/>
-								<option id="intel.compilestep.preprocessor.includedirectories.820934702" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.23158941" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.24800789" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="-j4" buildPath="${workspace_loc:/statdata/Release}" command="make" id="cdt.managedbuild.target.gnu.builder.base.785649803" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.842766777" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.191702125" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1875426953" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
 								</option>
-								<option id="intel.compilestep.optimization.ip.1351582872" name="Enable Interprocedural Optimization for Single File Compilation (-ip)" superClass="intel.compilestep.optimization.ip" value="true" valueType="boolean"/>
-								<option id="intel.compilestep.optimization.inline.expand1.549156238" name="Inline Function Expansion" superClass="intel.compilestep.optimization.inline.expand1" value="inl.exp1.anysuitable" valueType="enumerated"/>
-								<inputType id="intel.cpp.compilestep.input.519356797" superClass="intel.cpp.compilestep.input"/>
+								<option id="gnu.cpp.compiler.option.other.other.681208436" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++11" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.1593352479" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1205350506" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="intel.c.compilestep.linux.x86_64.a.rel.107122503_14.0.0" name="Intel Intel(R) 64 C Compiler" superClass="intel.c.compilestep.linux.x86_64.a.rel_14.0.0">
-								<option id="intel.compilestep.preprocessor.includedirectories.765452031" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1746493340" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<option id="gnu.c.compiler.option.include.paths.1968853107" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/statdata/include}&quot;"/>
 								</option>
-								<inputType id="intel.c.compilestep.input.1124651313" superClass="intel.c.compilestep.input"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.418459506" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool id="intel.arstep.linux.x86_64.a.rel.1133071933_14.0.0" name="Intel Intel(R) 64 Archiver" superClass="intel.arstep.linux.x86_64.a.rel_14.0.0"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.840644725" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1162561378" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1299220960" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.529269579" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
@@ -59,27 +60,34 @@
 				</externalSettings>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" id="intel.linux.x86_64.a.dbg.1822904996_14.0.0" name="Debug" parent="intel.linux.x86_64.a.dbg_14.0.0">
 					<folderInfo id="intel.linux.x86_64.a.dbg.1822904996._14.0.0" name="/" resourcePath="">
-						<toolChain id="intel.toolchain.linux.x86_64.a.dbg.60154332_14.0.0" name="Intel Toolchain for Static Library on Intel(R) 64" superClass="intel.toolchain.linux.x86_64.a.dbg_14.0.0">
-							<targetPlatform archList="x86_64" binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.linux.x86_64.a.dbg_14.0.0.2054701945" name="Platform.A.Debug" osList="linux" superClass="intel.platform.linux.x86_64.a.dbg_14.0.0"/>
-							<builder buildPath="${workspace_loc:/statdata/Debug}" id="intel.builder.linux.x86_64.a.dbg.464914046_14.0.0" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Intel Builder" superClass="intel.builder.linux.x86_64.a.dbg_14.0.0"/>
-							<tool id="intel.cpp.compilestep.linux.x86_64.a.dbg.722294342_14.0.0" name="Intel Intel(R) 64 C++ Compiler " superClass="intel.cpp.compilestep.linux.x86_64.a.dbg_14.0.0">
-								<option id="intel.compilestep.language.ansi_conformance.2062145276" name="ANSI Conformance" superClass="intel.compilestep.language.ansi_conformance" value="ansi_conformance.8" valueType="enumerated"/>
-								<option id="intel.compilestep.preprocessor.includedirectories.824781518" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1176690731" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1340206714" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="-j4" buildPath="${workspace_loc:/statdata/Debug}" command="make" id="cdt.managedbuild.target.gnu.builder.base.125338620" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool command="ar" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.archiver.base.356224236" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.490108074" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1103225236" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
 								</option>
-								<inputType id="intel.cpp.compilestep.input.916054226" superClass="intel.cpp.compilestep.input"/>
+								<option id="gnu.cpp.compiler.option.other.other.1083485310" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++11" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2019053067" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="intel.c.compilestep.linux.x86_64.a.dbg.28223166_14.0.0" name="Intel Intel(R) 64 C Compiler" superClass="intel.c.compilestep.linux.x86_64.a.dbg_14.0.0">
-								<inputType id="intel.c.compilestep.input.156950558" superClass="intel.c.compilestep.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.550487020" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.963624193" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool id="intel.arstep.linux.x86_64.a.dbg.2097507264_14.0.0" name="Intel Intel(R) 64 Archiver" superClass="intel.arstep.linux.x86_64.a.dbg_14.0.0"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.1836555291" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1201590748" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1423497294" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.675371666" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
@@ -95,7 +103,9 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="statdata.intel.linux.a.2.395222681" name="Static Library" projectType="intel.linux.a.2"/>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/statdata"/>
+	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 		<scannerConfigBuildInfo instanceId="intel.linux.x86_64.a.rel.1050504271_14.0.0;intel.linux.x86_64.a.rel.1050504271._14.0.0;intel.cpp.compilestep.linux.x86_64.a.rel.1494453062_14.0.0;intel.cpp.compilestep.input.519356797">

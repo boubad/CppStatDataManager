@@ -53,7 +53,7 @@ TEST_F(DatasetTest,createVariableBySigle) {
 	pSet->description(desc);
 	//
 	String varSigle = "testVar";
-	int nVarId = 46;
+	//int nVarId = 46;
 	Variable *pVar = pSet->create_variable(varSigle);
 	EXPECT_TRUE(pVar != nullptr);
 	EXPECT_EQ(varSigle,pVar->sigle());

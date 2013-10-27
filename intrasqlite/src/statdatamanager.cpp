@@ -195,11 +195,8 @@ const char *StatDataManager::CREATE_SQL[] = {
 /////////////////////////////////////////
 bool StatDataManager::load_dataset(intra::Dataset &cur) {
 		//
-		typedef intra::Dataset DatasetType;
 		typedef intra::Variable Variable;
 		typedef intra::Indiv Indiv;
-		typedef intra::Dataset::VariableMap VariableMap;
-		typedef intra::Dataset::IndivMap indivMap;
 		typedef intra::Value Value;
 		//
 		cur.values().clear();

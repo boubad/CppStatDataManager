@@ -17,11 +17,9 @@ namespace intra {
 /////////////////////////////////////////
 extern bool process_data(const std::string &srcfilename,
 		const std::string &databaseFilename, const std::string &datasetSigle,char delim, const std::string na) {
-	typedef int IndexType;
 	typedef std::string StringType;
 //
 	typedef ImportData<StringType> ImportDataType;
-	typedef ImportDataType::AnyVectorType AnyVectorType;
 //
 	try {
 		ImportDataType oData;

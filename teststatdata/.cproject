@@ -6,56 +6,56 @@
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="intel.linux.x86_64.exe.rel.382986732_14.0.0" name="Release" parent="intel.linux.x86_64.exe.rel_14.0.0">
 					<folderInfo id="intel.linux.x86_64.exe.rel.382986732._14.0.0" name="/" resourcePath="">
-						<toolChain id="intel.toolchain.linux.x86_64.exe.rel.357546938_14.0.0" name="Intel Toolchain for Executable on Intel(R) 64" superClass="intel.toolchain.linux.x86_64.exe.rel_14.0.0">
-							<targetPlatform archList="x86_64" binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.linux.x86_64.exe.rel_14.0.0.1561333084" name="Platform.Executable.Release" osList="linux" superClass="intel.platform.linux.x86_64.exe.rel_14.0.0"/>
-							<builder arguments="-k -j4" buildPath="${workspace_loc:/teststatdata/Release}" command="make" id="intel.builder.linux.x86_64.exe.rel.970820030_14.0.0" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Intel Builder" superClass="intel.builder.linux.x86_64.exe.rel_14.0.0"/>
-							<tool command="icpc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="intel.cpp.compilestep.linux.x86_64.exe.rel.2136237821_14.0.0" name="Intel Intel(R) 64 C++ Compiler " superClass="intel.cpp.compilestep.linux.x86_64.exe.rel_14.0.0">
-								<option id="intel.compilestep.language.ansi_conformance.952229" name="ANSI Conformance" superClass="intel.compilestep.language.ansi_conformance" value="ansi_conformance.8" valueType="enumerated"/>
-								<option id="intel.compilestep.preprocessor.includedirectories.2067811447" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1312433900" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.1759831720" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="-j4" buildPath="${workspace_loc:/teststatdata/Release}" command="make" id="cdt.managedbuild.target.gnu.builder.base.466210543" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1054271083" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.457968522" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1105209795" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/dbsqlite/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/intrasqlite/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gtest/include}&quot;"/>
 								</option>
-								<inputType id="intel.cpp.compilestep.input.1227251632" superClass="intel.cpp.compilestep.input"/>
+								<option id="gnu.cpp.compiler.option.other.other.1977252892" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++11" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.optimization.level.1165578077" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.895822500" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="intel.c.compilestep.linux.x86_64.exe.rel.554950845_14.0.0" name="Intel Intel(R) 64 C Compiler" superClass="intel.c.compilestep.linux.x86_64.exe.rel_14.0.0">
-								<inputType id="intel.c.compilestep.input.104577362" superClass="intel.c.compilestep.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.26384593" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1815855554" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool id="intel.c.linkstep.linux.x86_64.exe.rel.1488179284_14.0.0" name="Intel Intel(R) 64 C Linker" superClass="intel.c.linkstep.linux.x86_64.exe.rel_14.0.0">
-								<option id="intel.linkstep.libname.1429366929" name="Additional Libraries (-l)" superClass="intel.linkstep.libname" valueType="libs">
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.467581381" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.974082055" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.libs.1749175273" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="statdata"/>
 									<listOptionValue builtIn="false" value="dbsqlite"/>
 									<listOptionValue builtIn="false" value="intrasqlite"/>
 									<listOptionValue builtIn="false" value="gtest"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 								</option>
-							</tool>
-							<tool id="intel.cpp.linkstep.linux.x86_64.exe.rel.198092583_14.0.0" name="Intel Intel(R) 64 C++ Linker" superClass="intel.cpp.linkstep.linux.x86_64.exe.rel_14.0.0">
-								<option id="intel.linkstep.libname.1190138406" name="Additional Libraries (-l)" superClass="intel.linkstep.libname" valueType="libs">
-									<listOptionValue builtIn="false" value="statdata"/>
-									<listOptionValue builtIn="false" value="dbsqlite"/>
-									<listOptionValue builtIn="false" value="intrasqlite"/>
-									<listOptionValue builtIn="false" value="gtest"/>
-									<listOptionValue builtIn="false" value="pthread"/>
-								</option>
-								<option id="intel.linkstep.libpath.588364820" name="Search Directory for Libraries (-L)" superClass="intel.linkstep.libpath" valueType="stringList">
+								<option id="gnu.cpp.link.option.paths.40510573" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/dbsqlite/Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/intrasqlite/Release}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gtest/Release}&quot;"/>
 								</option>
-								<inputType id="intel.linkstep.input.1587423719" superClass="intel.linkstep.input">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1039254307" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.629382692" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.903533670" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
@@ -72,56 +72,55 @@
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="intel.linux.x86_64.exe.dbg.1111111138_14.0.0" name="Debug" parent="intel.linux.x86_64.exe.dbg_14.0.0">
 					<folderInfo id="intel.linux.x86_64.exe.dbg.1111111138._14.0.0" name="/" resourcePath="">
-						<toolChain id="intel.toolchain.linux.x86_64.exe.dbg.2001416200_14.0.0" name="Intel Toolchain for Executable on Intel(R) 64" superClass="intel.toolchain.linux.x86_64.exe.dbg_14.0.0">
-							<targetPlatform archList="x86_64" binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.linux.x86_64.exe.dbg_14.0.0.1287939412" name="Platform.Executable.Debug" osList="linux" superClass="intel.platform.linux.x86_64.exe.dbg_14.0.0"/>
-							<builder arguments="-k -j4" buildPath="${workspace_loc:/teststatdata/Debug}" command="make" id="intel.builder.linux.x86_64.exe.dbg.530724383_14.0.0" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Intel Builder" superClass="intel.builder.linux.x86_64.exe.dbg_14.0.0"/>
-							<tool id="intel.cpp.compilestep.linux.x86_64.exe.dbg.576038101_14.0.0" name="Intel Intel(R) 64 C++ Compiler " superClass="intel.cpp.compilestep.linux.x86_64.exe.dbg_14.0.0">
-								<option id="intel.compilestep.language.ansi_conformance.1993496646" name="ANSI Conformance" superClass="intel.compilestep.language.ansi_conformance" value="ansi_conformance.8" valueType="enumerated"/>
-								<option id="intel.compilestep.preprocessor.includedirectories.934271220" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.362755302" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.636335600" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder arguments="-j4" buildPath="${workspace_loc:/teststatdata/Debug}" command="make" id="cdt.managedbuild.target.gnu.builder.base.1628835684" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.936543572" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool command="g++" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.cpp.compiler.base.46160694" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.768546561" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/dbsqlite/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/intrasqlite/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gtest/include}&quot;"/>
 								</option>
-								<inputType id="intel.cpp.compilestep.input.285609454" superClass="intel.cpp.compilestep.input"/>
+								<option id="gnu.cpp.compiler.option.other.other.222206303" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -std=c++11" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1504831992" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="intel.c.compilestep.linux.x86_64.exe.dbg.1840622810_14.0.0" name="Intel Intel(R) 64 C Compiler" superClass="intel.c.compilestep.linux.x86_64.exe.dbg_14.0.0">
-								<inputType id="intel.c.compilestep.input.2098419023" superClass="intel.c.compilestep.input"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.47222749" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.453659064" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
-							<tool id="intel.c.linkstep.linux.x86_64.exe.dbg.2062955574_14.0.0" name="Intel Intel(R) 64 C Linker" superClass="intel.c.linkstep.linux.x86_64.exe.dbg_14.0.0">
-								<option id="intel.linkstep.libname.1861536215" name="Additional Libraries (-l)" superClass="intel.linkstep.libname" valueType="libs">
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.2093016634" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.300340773" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<option id="gnu.cpp.link.option.libs.1960367943" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="statdata"/>
 									<listOptionValue builtIn="false" value="dbsqlite"/>
 									<listOptionValue builtIn="false" value="intrasqlite"/>
 									<listOptionValue builtIn="false" value="gtest"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 								</option>
-							</tool>
-							<tool id="intel.cpp.linkstep.linux.x86_64.exe.dbg.720922817_14.0.0" name="Intel Intel(R) 64 C++ Linker" superClass="intel.cpp.linkstep.linux.x86_64.exe.dbg_14.0.0">
-								<option id="intel.linkstep.libname.119886849" name="Additional Libraries (-l)" superClass="intel.linkstep.libname" valueType="libs">
-									<listOptionValue builtIn="false" value="statdata"/>
-									<listOptionValue builtIn="false" value="dbsqlite"/>
-									<listOptionValue builtIn="false" value="intrasqlite"/>
-									<listOptionValue builtIn="false" value="gtest"/>
-									<listOptionValue builtIn="false" value="pthread"/>
-								</option>
-								<option id="intel.linkstep.libpath.1025997938" name="Search Directory for Libraries (-L)" superClass="intel.linkstep.libpath" valueType="stringList">
+								<option id="gnu.cpp.link.option.paths.1353884324" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/Debug}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/intrasqlite/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/dbsqlite/Debug}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/intrasqlite/Debug}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gtest/Debug}&quot;"/>
 								</option>
-								<inputType id="intel.linkstep.input.1578369016" superClass="intel.linkstep.input">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.188565340" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.1088707314" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.264166047" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
