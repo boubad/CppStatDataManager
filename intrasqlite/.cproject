@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="intel.linux.x86_64.a.rel.1068401606_14.0.0">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="intel.linux.x86_64.a.rel.1068401606_14.0.0" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/intrasqlite"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/intrasqlite/Release"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="intrasqlite"/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" id="intel.linux.x86_64.a.rel.1068401606_14.0.0" name="Release" parent="intel.linux.x86_64.a.rel_14.0.0">
+					<folderInfo id="intel.linux.x86_64.a.rel.1068401606._14.0.0" name="/" resourcePath="">
+						<toolChain id="intel.toolchain.linux.x86_64.a.rel.2026565759_14.0.0" name="Intel Toolchain for Static Library on Intel(R) 64" superClass="intel.toolchain.linux.x86_64.a.rel_14.0.0">
+							<targetPlatform archList="x86_64" binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.linux.x86_64.a.rel_14.0.0.584487403" name="Platform.A.Release" osList="linux" superClass="intel.platform.linux.x86_64.a.rel_14.0.0"/>
+							<builder arguments="-k -j4" buildPath="${workspace_loc:/intrasqlite/Release}" command="make" id="intel.builder.linux.x86_64.a.rel.294173187_14.0.0" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Intel Builder" superClass="intel.builder.linux.x86_64.a.rel_14.0.0"/>
+							<tool command="icpc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="intel.cpp.compilestep.linux.x86_64.a.rel.2041852049_14.0.0" name="Intel Intel(R) 64 C++ Compiler " superClass="intel.cpp.compilestep.linux.x86_64.a.rel_14.0.0">
+								<option id="intel.compilestep.language.ansi_conformance.1417987346" name="ANSI Conformance" superClass="intel.compilestep.language.ansi_conformance" value="ansi_conformance.8" valueType="enumerated"/>
+								<option id="intel.compilestep.preprocessor.includedirectories.1388673548" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/dbsqlite/include}&quot;"/>
+								</option>
+								<inputType id="intel.cpp.compilestep.input.248855722" superClass="intel.cpp.compilestep.input"/>
+							</tool>
+							<tool id="intel.c.compilestep.linux.x86_64.a.rel.663420693_14.0.0" name="Intel Intel(R) 64 C Compiler" superClass="intel.c.compilestep.linux.x86_64.a.rel_14.0.0">
+								<inputType id="intel.c.compilestep.input.1816770343" superClass="intel.c.compilestep.input"/>
+							</tool>
+							<tool id="intel.arstep.linux.x86_64.a.rel.66451840_14.0.0" name="Intel Intel(R) 64 Archiver" superClass="intel.arstep.linux.x86_64.a.rel_14.0.0"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+						<entry excluding="src|include" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="intel.linux.x86_64.a.dbg.1171095467_14.0.0">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="intel.linux.x86_64.a.dbg.1171095467_14.0.0" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/intrasqlite"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/intrasqlite/Debug"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="intrasqlite"/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ICCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="a" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.staticLib" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.staticLib" cleanCommand="rm -rf" description="" id="intel.linux.x86_64.a.dbg.1171095467_14.0.0" name="Debug" parent="intel.linux.x86_64.a.dbg_14.0.0">
+					<folderInfo id="intel.linux.x86_64.a.dbg.1171095467._14.0.0" name="/" resourcePath="">
+						<toolChain id="intel.toolchain.linux.x86_64.a.dbg.29815307_14.0.0" name="Intel Toolchain for Static Library on Intel(R) 64" superClass="intel.toolchain.linux.x86_64.a.dbg_14.0.0">
+							<targetPlatform archList="x86_64" binaryParser="org.eclipse.cdt.core.ELF" id="intel.platform.linux.x86_64.a.dbg_14.0.0.2085035139" name="Platform.A.Debug" osList="linux" superClass="intel.platform.linux.x86_64.a.dbg_14.0.0"/>
+							<builder arguments="-k -j4" buildPath="${workspace_loc:/intrasqlite/Debug}" command="make" id="intel.builder.linux.x86_64.a.dbg.577565491_14.0.0" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Intel Builder" superClass="intel.builder.linux.x86_64.a.dbg_14.0.0"/>
+							<tool id="intel.cpp.compilestep.linux.x86_64.a.dbg.862810146_14.0.0" name="Intel Intel(R) 64 C++ Compiler " superClass="intel.cpp.compilestep.linux.x86_64.a.dbg_14.0.0">
+								<option id="intel.compilestep.language.ansi_conformance.1376177224" name="ANSI Conformance" superClass="intel.compilestep.language.ansi_conformance" value="ansi_conformance.8" valueType="enumerated"/>
+								<option id="intel.compilestep.preprocessor.includedirectories.1833285271" name="Additional Include Directories (-I)" superClass="intel.compilestep.preprocessor.includedirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/statdata/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/dbsqlite/include}&quot;"/>
+								</option>
+								<inputType id="intel.cpp.compilestep.input.395257941" superClass="intel.cpp.compilestep.input"/>
+							</tool>
+							<tool id="intel.c.compilestep.linux.x86_64.a.dbg.133352130_14.0.0" name="Intel Intel(R) 64 C Compiler" superClass="intel.c.compilestep.linux.x86_64.a.dbg_14.0.0">
+								<inputType id="intel.c.compilestep.input.728204336" superClass="intel.c.compilestep.input"/>
+							</tool>
+							<tool id="intel.arstep.linux.x86_64.a.dbg.1229365810_14.0.0" name="Intel Intel(R) 64 Archiver" superClass="intel.arstep.linux.x86_64.a.dbg_14.0.0"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+						<entry excluding="src|include" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="intrasqlite.intel.linux.a.2.46796821" name="Static Library" projectType="intel.linux.a.2"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/intrasqlite"/>
+	</storageModule>
+</cproject>
